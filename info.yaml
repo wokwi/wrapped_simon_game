@@ -2,8 +2,8 @@
 # information
 project: 
   title: "Simon Says Game"
-  description: "description"
-  picture: docs/empty.png
+  description: "Memory game played by pressing the buttons in the order of the sequence of colors. The sequence of colors is displayed by lighting up the LEDs. Each color also has a corresponding tone."
+  picture: docs/simon.png
   author: "Uri Shaked"
   license: LICENSE
   waive_module_test: true
@@ -32,7 +32,7 @@ wrapper_proof:
 
 # openlane config, used in case I need to re-harden
 openlane:
-  config: "config.tcl"
+  config: "config.json"
 
 # source required for various configs and module instantiation
 source:
