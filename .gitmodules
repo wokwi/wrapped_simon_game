@@ -1,0 +1,3 @@
+[submodule "simon-verilog"]
+	path = simon-verilog
+	url = https://github.com/wokwi/simon-verilog

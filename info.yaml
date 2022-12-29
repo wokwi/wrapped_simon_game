@@ -1,11 +1,13 @@
 --- 
 # information
 project: 
-  title: "title"
+  title: "Simon Says Game"
   description: "description"
   picture: docs/empty.png
-  author: "Author"
+  author: "Uri Shaked"
   license: LICENSE
+  waive_module_test: true
+  waive_caravel: true
 
 # optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2, wishbone & openram
 interfaces: ['la1', 'gpio']
@@ -14,8 +16,8 @@ interfaces: ['la1', 'gpio']
 caravel_test:
   recipe: "coco_test"
   directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
+  id: 4
+  module_name: "wrapped_simon_game"
 
 # module test
 module_test:
@@ -35,7 +37,7 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - other source files here
+    - simon-verilog/src/simon.v
 
 # gds - check nothing on metal 5, DRC & LVS
 final:

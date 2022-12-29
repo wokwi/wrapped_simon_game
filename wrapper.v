@@ -11,7 +11,7 @@
 //`define USE_IRQ 1
 
 // update this to the name of your module
-module wrapped_project(
+module wrapped_simon_game(
 `ifdef USE_POWER_PINS
     inout vccd1,	// User area 1 1.8V supply
     inout vssd1,	// User area 1 digital ground
@@ -151,6 +151,15 @@ module wrapped_project(
     // Instantiate your module here, 
     // connecting what you need of the above signals. 
     // Use the buffered outputs for your module's outputs.
+
+    simon simon0(
+        .clk (wb_clk_i),
+        .rst (io_in[17]),
+        .btn (io_in[11:8]),
+        .led (buf_io_out[15:12]),
+        .sound (buf_io_out[16]),
+        .ticks_per_milli(1000) // 1MHz clock
+    );
 
 endmodule 
 `default_nettype wire

@@ -5,10 +5,10 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
-prep -top wrapped_project
+read -formal wrapper.v simon.v
+prep -top wrapped_simon_game
 
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+simon-verilog/src/simon.v
