@@ -158,7 +158,7 @@ module wrapped_simon_game(
         .btn (io_in[11:8]),
         .led (buf_io_out[15:12]),
         .sound (buf_io_out[16]),
-        .ticks_per_milli(1000) // 1MHz clock
+        .ticks_per_milli(io_in[18] ? la1_data_in[15:0] : 20000) // 20000 is for 20MHz clock
     );
 
 endmodule 

@@ -11,7 +11,7 @@
     "DIE_AREA": "0 0 150 250",
     "FP_SIZING": "absolute",
     "SYNTH_DEFINES": "MPRJ_IO_PADS=38",
-    "CLOCK_PERIOD": "1000",
+    "CLOCK_PERIOD": "50",
     "CLOCK_PORT": "wb_clk_i",
     "DESIGN_IS_CORE": "0",
     "RT_MAX_LAYER": "met4",

@@ -26,6 +26,11 @@ Simulate this project on Wokwi: https://wokwi.com/projects/352319274216569857
 | 15  | Output    | LED 4                |
 | 16  | Output    | Speaker/Buzzer (PWM) |
 | 17  | Input     | Reset                |
+| 18  | Input     | Clock Divider Select |
+
+### Clock Divider Select
+
+The clock Divider select pin (18) is used to select the clock divider for generating the 1 millisecond timer. Set this pin to 0 to use the a hardcoded value of 20000, which is suitable for 20MHz clock. Set this pin to 1 to use read the clock divider value from bits 15:0 of the LA1 input line.
 
 # Zero to ASIC Course
 
